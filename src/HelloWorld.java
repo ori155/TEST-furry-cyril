@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class HelloWorld {
 
@@ -6,7 +7,10 @@ public class HelloWorld {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		for(int i=0; i < 4; i++)
+		Scanner input = new Scanner(System.in);
+		System.out.println("please enter how many time would you like  to tell hello");
+		int n = input.nextInt();
+		for(int i=0; i < n; i++)
 			System.out.println("Hello World");
 	}
 
